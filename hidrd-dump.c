@@ -1,14 +1,14 @@
 /*
- * Copyright (c) 2008 Nikolai Kondrashov
+ * Copyright (c) 2008-2009 Nikolai Kondrashov
  *
- * This file is part of digimend-diag.
+ * This file is part of hidrd-dump.
  *
- * Digimend-diag is free software; you can redistribute it and/or modify
+ * Hidrd-dump is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  *
- * Digimend-diag is distributed in the hope that it will be useful,
+ * Hidrd-dump is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
@@ -23,8 +23,9 @@
 #include <errno.h>
 #include <stdio.h>
 #include <string.h>
-#include <usb.h>
 #include <hid.h>
+
+#include "config.h"
 
 static const char *
 hid_return_str(hid_return rc)
