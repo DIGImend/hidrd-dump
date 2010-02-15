@@ -30,18 +30,11 @@ AC_PROG_CC
 AC_PROG_INSTALL
 
 # Checks for libraries.
-AC_CHECK_LIB([hid], [hid_init])
+AC_CHECK_LIB(
+    [hid], [hid_init], [],
+    [AC_MSG_FAILURE([The hid library is required, but was not found, abort.
+                     Try installing libhid-dev package.])])
 
-# Checks for header files.
-AC_HEADER_STDC
-AC_CHECK_HEADERS([string.h])
-
-# Checks for typedefs, structures, and compiler characteristics.
-AC_C_CONST
-AC_TYPE_SIZE_T
-
-# Checks for library functions.
-AC_CHECK_FUNCS([strtol])
-
+# Output
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
