@@ -1,0 +1,12 @@
+/Makefile.in
+/configure
+/config.log
+/config.status
+/stamp-h1
+/config.h
+/config.h.in
+/autom4te.cache
+/.deps
+/aclocal.m4
+/hidrd-dump
+/Makefile
